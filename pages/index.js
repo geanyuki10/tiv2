@@ -2,135 +2,168 @@ import { useState } from 'react';
 
 export default function SuperTI() {
   const [results, setResults] = useState('');
-  const [loading, setLoading] = useState(false);
 
-  const downloadLocalVersion = () => {
+  const handleDownload = () => {
     setResults(`📥 DOWNLOAD DA VERSÃO LOCAL - SUPERTI COMPLETO
 
-🚀 POR QUE PRECISA DA VERSÃO LOCAL?
+🚀 PARA BAIXAR A VERSÃO COMPLETA:
 
-• ✅ ATIVAR WINDOWS - Funciona apenas localmente
-• ✅ COMANDOS REAIS - systeminfo, ipconfig, tasklist, etc.
-• ✅ ADMINISTRADOR - Acesso total ao sistema
-• ✅ SEM LIMITAÇÕES - Todas as 20+ ferramentas funcionando
-
-📦 COMO BAIXAR E USAR:
-
-1️⃣ 📥 BAIXAR AGORA:
-   • Clique no link abaixo para baixar
-   • Salve o arquivo em qualquer pasta
-
-2️⃣ 🛠️ INSTALAÇÃO:
-   • Extraia o arquivo ZIP
-   • Execute "SuperTI.bat" como Administrador
-   • Pronto! Todas as funções liberadas
-
-3️⃣ 🪟 ATIVAÇÃO DO WINDOWS:
-   • Na versão local, selecione opção "8"
-   • Sistema ativado automaticamente
-   • 100% funcional
+1. 📧 Entre em contato com: gean@email.com
+2. 💬 Solicite o arquivo: SuperTI_Completo.zip
+3. 🛠️ Receba o download direto
 
 🔧 FUNCIONALIDADES DA VERSÃO LOCAL:
 
-💻 SISTEMA COMPLETO:
+✅ ATIVAÇÃO WINDOWS - Completa e funcional
+✅ COMANDOS SISTEMA - systeminfo, ipconfig, etc.
+✅ FERRAMENTAS TI - 20+ opções profissionais
+✅ SEGURANÇA - Execução como administrador
+
+📋 O QUE INCLUI:
+
+💻 Sistema Completo:
    • Informações detalhadas do sistema
-   • Processos e serviços
-   • Drivers e hardware
-   • Memória e desempenho
+   • Processos e serviços em tempo real
+   • Gerenciamento de drivers
+   • Monitoramento de desempenho
 
-🌐 REDE AVANÇADA:
-   • Configuração completa de rede
+🌐 Rede Avançada:
+   • Diagnóstico completo de rede
+   • Reset de TCP/IP e Winsock
    • Testes de conectividade
-   • Diagnóstico DNS
-   • Reset de TCP/IP
+   • Configurações avançadas
 
-🛠️ FERRAMENTAS REAIS:
+🛠️ Ferramentas:
    • Limpeza automática de temporários
    • Reparo do sistema Windows
    • Gerenciamento de usuários
    • Backup e restore
 
-🎯 RECOMENDAÇÃO:
-Baixe agora a versão local para acesso
-COMPLETO a todas as ferramentas!`);
+🪟 Ativação Windows:
+   • Métodos seguros e confiáveis
+   • Ativação digital
+   • KMS para empresas
+   • Verificação de status
+
+📞 CONTATO PARA DOWNLOAD:
+Email: gean@email.com
+WhatsApp: (11) 99999-9999
+
+💡 Versão web serve como demonstração.
+A versão local tem TODAS as funcionalidades!`);
   };
 
-  const showWebLimitations = () => {
-    setResults(`⚠️  LIMITAÇÕES DA VERSÃO WEB
+  const showFeatures = () => {
+    setResults(`🚀 TODAS AS FUNCIONALIDADES DO SUPERTI
 
-🔒 POR QUE ALGUMAS COISAS NÃO FUNCIONAM AQUI:
+🎯 VERSÃO LOCAL COMPLETA - BY GEAN
 
-• 🚫 COMANDOS WINDOWS - Não temos acesso ao systeminfo, ipconfig, etc.
-• 🚫 ADMINISTRADOR - Aplicação web não tem privilégios de admin
-• 🚫 ACESSO AO SISTEMA - Segurança do navegador bloqueia
-• 🚫 ATIVAÇÃO WINDOWS - Requer execução local
+💻 MÓDULO SISTEMA:
+1. Informações completas do sistema
+2. Modelo e serial do computador
+3. Detalhes da placa-mãe e BIOS
+4. Memória RAM e processador
+5. Drivers instalados
+6. Variáveis de ambiente
+7. Verificação de integridade (sfc /scannow)
+8. Reparo da imagem Windows (DISM)
 
-🌐 O QUE FUNCIONA NA WEB:
-• ✅ Interface visual
-• ✅ Guias e instruções
-• ✅ Links para download
-• ✅ Informações básicas
+🌐 MÓDULO REDE:
+9. Configuração completa de rede
+10. Teste de ping e conectividade
+11. Rastreamento de rota
+12. Resolução DNS
+13. Conexões de rede ativas
+14. Endereço MAC e tabela ARP
+15. Reset TCP/IP e Winsock
+16. Tabela de rotas
 
-💡 SOLUÇÃO:
-Use a VERSÃO LOCAL para todas as funcionalidades
-completas do SuperTI!`);
+💾 MÓDULO DISCOS:
+17. Espaço em disco e partições
+18. Verificação de discos (chkdsk)
+19. Gerenciamento de discos
+20. Estrutura de pastas
+21. Limpeza segura de espaço
+
+👥 MÓDULO USUÁRIOS:
+22. Usuários logados e locais
+23. Detalhes de usuários específicos
+24. Sessões ativas (RDP/console)
+25. Administradores locais
+26. Políticas de senha
+
+⚙️ MÓDULO PROCESSOS:
+27. Lista completa de processos
+28. Finalização de processos
+29. Serviços ativos
+30. Lista resumida de processos
+
+🔧 MÓDULO FERRAMENTAS:
+31. Ativação do Windows ★
+32. Reinício do spooler de impressão
+33. Limpeza de arquivos temporários
+34. Download de programas (Zabbix, GLPI)
+
+🛡️ SEGURANÇA:
+• Execução como administrador
+• Logs detalhados de todas as ações
+• Verificação de segurança
+• Backup automático de configurações
+
+📥 CONTATE PARA RECEBER O DOWNLOAD!`);
   };
 
-  const showSecurityInfo = () => {
-    setResults(`🛡️ INFORMAÇÕES DE SEGURANÇA
+  const showInstructions = () => {
+    setResults(`📋 COMO USAR O SUPERTI - GUIA COMPLETO
 
-✅ VERSÃO LOCAL - SUPERTI COMPLETO:
+🎯 APÓS RECEBER O DOWNLOAD:
 
-• 🔒 EXECUÇÃO SEGURA - Como Administrador
-• 🔍 CÓDigo VERIFICADO - Scripts confiáveis
-• 📊 LOGS DETALHADOS - Tudo é registrado
-• 🚫 SEM VÍRUS - 100% limpo
+1. 📁 EXTRAIR ARQUIVO
+   • Baixe o arquivo SuperTI_Completo.zip
+   • Extraia em uma pasta de sua preferência
+   • Exemplo: C:\\SuperTI\\
 
-⚠️  RECOMENDAÇÕES DE SEGURANÇA:
+2. 🛡️ EXECUTAR COMO ADMINISTRADOR
+   • Clique com botão direito em "SuperTI.bat"
+   • Selecione "Executar como administrador"
+   • Confirme a solicitação de UAC
 
-1. SEMPRE execute como Administrador
-2. Mantenha o Windows Update ativo
-3. Use antivírus atualizado
-4. Faça backup regularmente
+3. 🎮 USAR O MENU PRINCIPAL
+   • Interface colorida e organizada
+   • 34 opções numeradas
+   • Logs automáticos em C:\\SuporteTI\\
 
-🔐 SEGURANÇA DA ATIVAÇÃO:
-• Scripts de fontes confiáveis
-• Verificação de integridade
-• Logs detalhados de execução
+4. 🪟 ATIVAR WINDOWS
+   • Selecione opção "8" no menu
+   • Siga as instruções na tela
+   • Ativação automática e segura
 
-📥 Baixe a versão local para segurança completa!`);
-  };
+🔧 FUNCIONALIDADES ESPECIAIS:
 
-  const showCleanupInfo = () => {
-    setResults(`🧹 LIMPEZA DO SISTEMA - GUIA COMPLETO
+✅ LOGS AUTOMÁTICOS
+   • Todas as ações são registradas
+   • Arquivo: C:\\SuporteTI\\logs.txt
+   • Timestamp e detalhes completos
 
-🛠️ NA VERSÃO LOCAL DO SUPERTI:
+✅ INTERFACE PROFISSIONAL
+   • Cores organizadas por categoria
+   • Menu intuitivo e fácil navegação
+   • Feedback visual de todas as ações
 
-✅ LIMPEZA AUTOMÁTICA:
-   • Arquivos temporários (%temp%)
-   • Cache do sistema
-   • Logs antigos
-   • Lixeira
+✅ SEM INSTALAÇÃO
+   • Apenas extrair e executar
+   • Não modifica registro
+   • Não deixa resíduos
 
-✅ OTIMIZAÇÃO:
-   • Limpeza de disco
-   • Desfragmentação
-   • Reparo do registro
+⚠️  RECOMENDAÇÕES:
 
-✅ MANUTENÇÃO:
-   • Verificação de arquivos do sistema
-   • Reparo do Windows Update
-   • Limpeza de atualizações antigas
+• Sempre execute como administrador
+• Mantenha antivírus atualizado
+• Faça backup regularmente
+• Use em ambiente autorizado
 
-📋 COMANDOS EXECUTADOS AUTOMATICAMENTE:
-
-• del /q /f /s %temp%\\*
-• cleanmgr /sagerun:1
-• sfc /scannow
-• dism /online /cleanup-image /restorehealth
-
-🚀 FUNCIONALIDADES COMPLETAS APENAS NA VERSÃO LOCAL!
-📥 Clique em "Download Versão Local" para baixar!`);
+📞 SUPORTE:
+gean@email.com - Para dúvidas e download`);
   };
 
   return (
@@ -163,7 +196,7 @@ completas do SuperTI!`);
               🛠️ SuperTI Web
             </h1>
             <p style={{ fontSize: '1.25rem', opacity: 0.9 }}>
-              Portal de Download - Versão Local Completa
+              Portal Oficial - Download da Versão Local
             </p>
             <div style={{ marginTop: '1rem' }}>
               <span style={{ 
@@ -182,7 +215,7 @@ completas do SuperTI!`);
                 fontSize: '0.875rem',
                 margin: '0 0.5rem'
               }}>
-                🚀 Download Local
+                🚀 Vercel
               </span>
             </div>
           </div>
@@ -203,30 +236,15 @@ completas do SuperTI!`);
             fontWeight: 'bold',
             marginBottom: '1rem'
           }}>
-            ⚠️ Atenção: Versão Web Limitada
+            ⚠️ Site Informativo - Download Sob Demanda
           </h3>
           <p style={{ color: '#92400e', marginBottom: '1rem' }}>
-            Esta versão web serve apenas como portal de informações e download.
-            <strong> Todas as funcionalidades reais funcionam apenas na versão local.</strong>
+            Esta versão web mostra todas as funcionalidades disponíveis.
+            <strong> Entre em contato para receber o download da versão local completa.</strong>
           </p>
-          <button 
-            onClick={downloadLocalVersion}
-            style={{
-              backgroundColor: '#dc2626',
-              color: 'white',
-              padding: '1rem 2rem',
-              borderRadius: '0.75rem',
-              border: 'none',
-              fontWeight: 'bold',
-              fontSize: '1.1rem',
-              cursor: 'pointer'
-            }}
-          >
-            📥 BAIXAR VERSÃO LOCAL COMPLETA
-          </button>
         </div>
 
-        {/* Grid de Informações */}
+        {/* Grid de Ações */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -234,7 +252,7 @@ completas do SuperTI!`);
           marginBottom: '2rem'
         }}>
           
-          {/* Download Principal */}
+          {/* Download */}
           <div style={{
             backgroundColor: 'white',
             borderRadius: '1rem',
@@ -251,7 +269,7 @@ completas do SuperTI!`);
               📥 Download
             </h3>
             <button 
-              onClick={downloadLocalVersion}
+              onClick={handleDownload}
               style={{
                 width: '100%',
                 backgroundColor: '#dc2626',
@@ -265,10 +283,10 @@ completas do SuperTI!`);
                 cursor: 'pointer'
               }}
             >
-              🛠️ BAIXAR SUPERTI COMPLETO
+              📧 SOLICITAR DOWNLOAD
             </button>
             <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
-              Versão local com todas as 20+ ferramentas funcionando
+              Entre em contato para receber o arquivo
             </p>
           </div>
 
@@ -277,10 +295,11 @@ completas do SuperTI!`);
             backgroundColor: 'white',
             borderRadius: '1rem',
             padding: '1.5rem',
-            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)'
+            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+            textAlign: 'center'
           }}>
             <h3 style={{ 
-              fontSize: '1.25rem',
+              fontSize: '1.5rem',
               fontWeight: 'bold',
               color: '#2563eb',
               marginBottom: '1rem'
@@ -288,135 +307,67 @@ completas do SuperTI!`);
               🚀 Funcionalidades
             </h3>
             <button 
-              onClick={showWebLimitations}
+              onClick={showFeatures}
               style={{
                 width: '100%',
                 backgroundColor: '#3b82f6',
                 color: 'white',
-                padding: '1rem 1.5rem',
+                padding: '1.5rem',
                 borderRadius: '0.75rem',
                 border: 'none',
-                fontWeight: '600',
-                marginBottom: '0.75rem',
+                fontWeight: 'bold',
+                fontSize: '1.1rem',
+                marginBottom: '1rem',
                 cursor: 'pointer'
               }}
             >
-              📋 Ver Todas as Ferramentas
+              📋 VER TODAS
             </button>
-            <button 
-              onClick={showSecurityInfo}
-              style={{
-                width: '100%',
-                backgroundColor: '#10b981',
-                color: 'white',
-                padding: '1rem 1.5rem',
-                borderRadius: '0.75rem',
-                border: 'none',
-                fontWeight: '600',
-                marginBottom: '0.75rem',
-                cursor: 'pointer'
-              }}
-            >
-              🛡️ Segurança
-            </button>
+            <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
+              34 ferramentas profissionais
+            </p>
           </div>
 
-          {/* Ajuda */}
+          {/* Instruções */}
           <div style={{
             backgroundColor: 'white',
             borderRadius: '1rem',
             padding: '1.5rem',
-            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)'
+            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+            textAlign: 'center'
           }}>
             <h3 style={{ 
-              fontSize: '1.25rem',
+              fontSize: '1.5rem',
               fontWeight: 'bold',
-              color: '#8b5cf6',
+              color: '#059669',
               marginBottom: '1rem'
             }}>
-              💡 Ajuda
+              💡 Instruções
             </h3>
             <button 
-              onClick={showCleanupInfo}
+              onClick={showInstructions}
               style={{
                 width: '100%',
-                backgroundColor: '#8b5cf6',
+                backgroundColor: '#10b981',
                 color: 'white',
-                padding: '1rem 1.5rem',
+                padding: '1.5rem',
                 borderRadius: '0.75rem',
                 border: 'none',
-                fontWeight: '600',
-                marginBottom: '0.75rem',
+                fontWeight: 'bold',
+                fontSize: '1.1rem',
+                marginBottom: '1rem',
                 cursor: 'pointer'
               }}
             >
-              🧹 Limpeza do Sistema
+              🛠️ COMO USAR
             </button>
-            <button 
-              onClick={downloadLocalVersion}
-              style={{
-                width: '100%',
-                backgroundColor: '#7c3aed',
-                color: 'white',
-                padding: '1rem 1.5rem',
-                borderRadius: '0.75rem',
-                border: 'none',
-                fontWeight: '600',
-                cursor: 'pointer'
-              }}
-            >
-              🪟 Ativar Windows
-            </button>
+            <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
+              Guia completo de utilização
+            </p>
           </div>
         </div>
 
-        {/* Instruções de Download */}
-        <div style={{
-          backgroundColor: 'white',
-          borderRadius: '1rem',
-          padding: '2rem',
-          boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
-          marginBottom: '2rem'
-        }}>
-          <h3 style={{ 
-            fontSize: '1.5rem',
-            fontWeight: 'bold',
-            color: '#374151',
-            marginBottom: '1.5rem',
-            textAlign: 'center'
-          }}>
-            📋 Como Usar a Versão Local
-          </h3>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-            gap: '1rem',
-            textAlign: 'center'
-          }}>
-            <div>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>1️⃣</div>
-              <h4 style={{ fontWeight: 'bold', color: '#3b82f6' }}>Baixar</h4>
-              <p style={{ color: '#6b7280' }}>Clique no botão de download acima</p>
-            </div>
-            <div>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>2️⃣</div>
-              <h4 style={{ fontWeight: 'bold', color: '#10b981' }}>Executar</h4>
-              <p style={{ color: '#6b7280' }}>Como Administrador</p>
-            </div>
-            <div>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>3️⃣</div>
-              <h4 style={{ fontWeight: 'bold', color: '#f59e0b' }}>Usar</h4>
-              <p style={{ color: '#6b7280' }}>Todas as ferramentas liberadas</p>
-            </div>
-            <div>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>4️⃣</div>
-              <h4 style={{ fontWeight: 'bold', color: '#8b5cf6' }}>Ativar</h4>
-              <p style={{ color: '#6b7280' }}>Windows e outras funções</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Área de Resultados */}
+        {/* Área de Informações */}
         <div style={{
           backgroundColor: 'white',
           borderRadius: '1rem',
@@ -439,7 +390,7 @@ completas do SuperTI!`);
             fontFamily: 'monospace',
             fontSize: '0.875rem',
             whiteSpace: 'pre-wrap',
-            minHeight: '200px',
+            minHeight: '300px',
             maxHeight: '500px',
             overflowY: 'auto',
             border: '2px solid #374151'
@@ -460,7 +411,7 @@ completas do SuperTI!`);
               🚀 SuperTI - Ferramenta Completa de Suporte de TI
             </p>
             <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
-              By Gean • 📧 Suporte • 🪟 Ativação Windows Disponível na Versão Local
+              By Gean • 📧 Contato para download • 🪟 Ativação Windows Disponível
             </p>
           </div>
         </footer>
