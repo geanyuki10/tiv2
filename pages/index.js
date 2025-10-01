@@ -3,59 +3,72 @@ import { useState } from 'react';
 export default function SuperTI() {
   const [results, setResults] = useState('');
 
-  // DOWNLOAD DIRETO - Link do OneDrive
+  // DOWNLOAD DIRETO - Link do MediaFire
   const handleDownload = () => {
-    // Seu link do OneDrive (convertido para link direto de download)
-    const downloadUrl = 'https://1drv.ms/u/s!ETW_sjWqKf9CmCoiv3eFbPIBOWGEQIK8reGGN-41avDUEA?e=8mYRDr';
-    
-    // Converter link do OneDrive para link direto (se necessário)
-    const directDownloadUrl = downloadUrl.replace('https://1drv.ms/u/', 'https://onedrive.live.com/download?resid=');
+    // Novo link do MediaFire
+    const downloadUrl = 'https://www.mediafire.com/file/18t3v36rzig5my7/ti_guiv1.rar/file';
     
     // Abrir download em nova aba
-    window.open(directDownloadUrl, '_blank');
+    window.open(downloadUrl, '_blank');
     
     setResults(`📥 DOWNLOAD INICIADO - SUPERTI COMPLETO
 
 ✅ Download iniciado em nova aba!
 
-🔗 LINK DO ARQUIVO: 
+🔗 LINK DIRETO: 
 ${downloadUrl}
 
-📦 DETALHES DO DOWNLOAD:
+📦 DETALHES DO ARQUIVO:
 
-• 🛠️ SuperTI Completo - Versão Local
-• 📁 Arquivo executável pronto para usar
+• 🛠️ SuperTI Completo - Versão v1.0
+• 📁 Arquivo: ti_guiv1.rar (compactado)
+• 💾 Tamanho: ~15 MB
 • 🪟 Ativador do Windows incluído
 • 🔧 36 ferramentas de suporte TI
 • 💻 Interface gráfica profissional
 
 🚀 COMO USAR APÓS BAIXAR:
 
-1. 📁 Baixe o arquivo do link acima
-2. 🛡️ Clique direito no executável
-3. ⚡ Selecione "Executar como administrador"
-4. 🎯 Use todas as 36 funcionalidades
+1. 📥 BAIXAR ARQUIVO
+   • O download iniciará automaticamente
+   • Aguarde o arquivo baixar completamente
+
+2. 📁 EXTRAIR ARQUIVO RAR
+   • Você precisará do WinRAR ou 7-Zip
+   • Clique direito no arquivo .rar
+   • Selecione "Extrair aqui" ou "Extract here"
+
+3. 🛡️ EXECUTAR COMO ADMINISTRADOR
+   • Dentro da pasta extraída, encontre o executável
+   • Clique direito no "SuperTI_By_Gean.exe"
+   • Selecione "Executar como administrador"
+
+4. 🎯 USAR TODAS AS FUNCIONALIDADES
+   • 36 ferramentas organizadas em 6 categorias
+   • Interface intuitiva e profissional
+   • Logs automáticos em C:\\SuporteTI\\
 
 ✨ FUNCIONALIDADES INCLUÍDAS:
 
-💻 SISTEMA COMPLETO:
+💻 SISTEMA COMPLETO (6 funções):
    • Informações detalhadas do sistema
    • Processos e serviços em tempo real
    • Gerenciamento de drivers
    • Monitoramento de desempenho
 
-🌐 REDE AVANÇADA:
+🌐 REDE AVANÇADA (6 funções):
    • Diagnóstico completo de rede
    • Reset de TCP/IP e Winsock
    • Testes de conectividade
    • Configurações avançadas
 
-🛠️ FERRAMENTAS:
+🛠️ FERRAMENTAS (24 funções restantes):
    • Ativação do Windows ★
    • Limpeza automática de temporários
    • Reparo do sistema Windows
    • Gerenciamento de usuários
    • Downloads de programas (Zabbix, GLPI)
+   • E muito mais!
 
 📊 LOGS DETALHADOS:
    • Todas as ações registradas
@@ -66,68 +79,72 @@ ${downloadUrl}
 By Gean - Ferramenta profissional de TI
 
 💡 DICA: Sempre execute como Administrador
-para acesso total às funcionalidades!`);
+para acesso total às funcionalidades!
+
+⚠️  EXTRACAO DO ARQUIVO:
+Lembre-se de extrair o arquivo .rar antes de executar!
+Use WinRAR, 7-Zip ou similar.`);
   };
 
   const showFeatures = () => {
-    setResults(`🚀 TODAS AS FUNCIONALIDADES DO SUPERTI
+    setResults(`🚀 TODAS AS FUNCIONALIDADES DO SUPERTI v1.0
 
 🎯 VERSÃO LOCAL COMPLETA - BY GEAN
 
 💻 MÓDULO SISTEMA (6 funções):
-1. Informações completas do sistema
-2. Modelo e serial do computador
-3. Detalhes da placa-mãe e BIOS
-4. Memória RAM e processador
-5. Drivers instalados
-6. Variáveis de ambiente
+1. 💻 System Info - Informações completas
+2. 🖥️ Modelo PC - Detalhes do hardware
+3. 🧠 Memória RAM - Capacidade e velocidade
+4. 🔧 Drivers - Lista de drivers instalados
+5. ⚙️ Variáveis - Variáveis de ambiente
+6. 🔄 Versão Windows - Versão do sistema
 
 🌐 MÓDULO REDE (6 funções):
-7. Configuração completa de rede
-8. Teste de ping e conectividade
-9. Rastreamento de rota
-10. Resolução DNS
-11. Conexões de rede ativas
-12. Endereço MAC e tabela ARP
+7. 🌐 IP Config - Configuração completa
+8. 📡 Conexões - Conexões de rede ativas
+9. 🏓 Ping Test - Teste de conectividade
+10. 🔍 DNS Info - Resolução DNS
+11. 🛣️ Tracert - Rastreamento de rota
+12. 📊 Tabela ARP - Tabela ARP local
 
 💾 MÓDULO DISCOS (6 funções):
-13. Espaço em disco e partições
-14. Verificação de discos (chkdsk)
-15. Gerenciamento de discos
-16. Estrutura de pastas
-17. Limpeza segura de espaço
-18. Listagem de unidades
+13. 💾 Discos - Espaço em disco
+14. 🔍 Verificar Disco - CHKDSK do disco C
+15. 📁 Unidades - Unidades conectadas
+16. 🌳 Tree - Estrutura de pastas
+17. 🧹 Limpar Temp - Limpeza temporários
+18. 📋 Listar Pastas - Listagem de diretórios
 
 👥 MÓDULO USUÁRIOS (6 funções):
-19. Usuários logados e locais
-20. Detalhes de usuários específicos
-21. Sessões ativas (RDP/console)
-22. Administradores locais
-23. Políticas de senha
-24. Informações de usuário
+19. 👤 Usuário Logado - Usuário atual
+20. 👥 Todos Usuários - Usuários do sistema
+21. 🛡️ Administradores - Admins locais
+22. 🔐 Políticas - Políticas de senha
+23. 💻 Sessões - Sessões ativas
+24. 📊 Info Usuário - Detalhes do usuário
 
 ⚙️ MÓDULO PROCESSOS (6 funções):
-25. Lista completa de processos
-26. Finalização de processos
-27. Serviços ativos
-28. Lista resumida de processos
-29. Uso da CPU
-30. Memória livre
+25. 📋 Lista Processos - Processos ativos
+26. ⚡ Processos WMIC - Lista resumida
+27. 🔧 Serviços - Serviços do Windows
+28. 🛑 Finalizar Proc - Finalizar processos
+29. 📊 CPU Info - Uso da CPU
+30. 🧮 Memória Info - Memória livre
 
 🔧 MÓDULO ADMINISTRATIVO (6 funções):
-31. Ativação do Windows ★
-32. Reinício do spooler de impressão
-33. Limpeza de arquivos temporários
-34. Reparo do sistema (sfc /scannow)
-35. Reset de configurações de rede
-36. Downloads de programas
+31. 🪟 Ativar Windows ★ - Ativação completa
+32. 🖨️ Spooler - Reiniciar spooler impressão
+33. 🔧 Reparar Sistema - SFC e DISM
+34. 🔄 Reset Rede - Reset Winsock/TCPIP
+35. 🧹 Limpeza Completa - Limpeza total
+36. 📊 Info Sistema - Informações detalhadas
 
-📦 MÓDULO DOWNLOADS (5 funções):
-37. Zabbix Agent - Monitoramento
-38. GLPI Agent - Gerenciamento TI
-39. Google Chrome
-40. Mozilla Firefox
-41. VLC Media Player
+📦 MÓDULO DOWNLOADS (5 funções extras):
+37. 📥 Zabbix Agent - Monitoramento
+38. 📥 GLPI Agent - Gerenciamento TI
+39. 🔧 Chrome - Navegador web
+40. 🦊 Firefox - Navegador web
+41. 📹 VLC Player - Reprodutor de mídia
 
 🛡️ RECURSOS AVANÇADOS:
 • Interface gráfica moderna
@@ -135,83 +152,82 @@ para acesso total às funcionalidades!`);
 • Execução como administrador
 • Threading para não travar
 • Timeout inteligente
+• Design profissional
 
 📥 BAIXE AGORA PARA ACESSO COMPLETO!`);
   };
 
   const showInstructions = () => {
-    setResults(`📋 COMO USAR O SUPERTI - GUIA COMPLETO
+    setResults(`📋 COMO USAR O SUPERTI v1.0 - GUIA COMPLETO
 
-🎯 APÓS BAIXAR O ARQUIVO:
+🎯 PASSO A PASSO APÓS BAIXAR:
 
 1. 📥 BAIXAR ARQUIVO
-   • Clique em "BAIXE AGORA" acima
-   • Salve o arquivo em sua pasta preferida
-   • Exemplo: Área de Trabalho ou Downloads
+   • Clique em "🚀 BAIXE AGORA" acima
+   • Aguarde o download do "ti_guiv1.rar"
+   • Salve em local de fácil acesso
 
-2. 🛡️ EXECUTAR COMO ADMINISTRADOR
-   • Clique com botão direito no executável
-   • Selecione "Executar como administrador"
-   • Confirme a solicitação de UAC (Controle de Conta de Usuário)
+2. 📁 EXTRAIR ARQUIVO RAR
+   • Arquivo: ti_guiv1.rar (~15 MB)
+   • Use WinRAR, 7-Zip ou similar
+   • Clique direito → "Extrair aqui"
+   • Uma pasta será criada com os arquivos
 
-3. 🎮 USAR A INTERFACE
+3. 🛡️ EXECUTAR COMO ADMINISTRADOR
+   • Encontre o "SuperTI_By_Gean.exe"
+   • Clique direito → "Executar como administrador"
+   • Confirme a solicitação de UAC
+
+4. 🎮 USAR A INTERFACE
    • 6 seções organizadas por categoria
-   • 36 botões com funcionalidades específicas
+   • 36+ botões com funcionalidades
    • Área de saída em tempo real
    • Logs automáticos
 
-4. 🪟 ATIVAR WINDOWS
-   • Selecione "🪟 Ativar Windows" no módulo Administrativo
-   • Siga as instruções na tela
-   • Ativação automática e segura
+🔧 EXTRACAÇÃO DO RAR (IMPORTANTE):
 
-🔧 FUNCIONALIDADES ESPECIAIS:
+💡 SE NÃO TEM PROGRAMA PARA EXTRAIR:
+• Baixe o 7-Zip GRATUITO: https://www.7-zip.org/
+• Ou WinRAR: https://www.win-rar.com/
 
-✅ INTERFACE MODERNA
-   • Design profissional e intuitivo
-   • Cores organizadas por categoria
-   • Navegação fácil e rápida
+📁 APÓS EXTRAIR, VOCÊ TERÁ:
+• SuperTI_By_Gean.exe (executável principal)
+• Outros arquivos de suporte (se houver)
 
-✅ LOGS AUTOMÁTICOS
-   • Todas as ações são registradas
-   • Arquivo: C:\\SuporteTI\\super_ti_gui.log
-   • Timestamp e detalhes completos
+🪟 ATIVAÇÃO DO WINDOWS:
 
-✅ DOWNLOADS INTEGRADOS
-   • Zabbix Agent - Monitoramento
-   • GLPI Agent - Gerenciamento TI
-   • Programas úteis diretamente
-
-✅ SEGURANÇA
-   • Execução como administrador
-   • Comandos verificados
-   • Sem modificações perigosas
+1. Execute como Administrador
+2. Clique em "🪟 Ativar Windows"
+3. Confirme a execução
+4. Siga as instruções na tela
 
 ⚠️  RECOMENDAÇÕES IMPORTANTES:
 
-• 🔒 Sempre execute como administrador
+• 🔒 SEMPRE execute como administrador
 • 🔄 Mantenha Windows Update ativo
 • 🛡️ Use antivírus atualizado
 • 💾 Faça backup regularmente
 • ⚠️ Use em ambiente autorizado
 
-📞 SUPORTE E CONTATO:
-By Gean - Disponível para dúvidas e suporte
-
-🎯 VERSÃO WEB vs VERSÃO LOCAL:
+🎯 DIFERENÇAS DAS VERSÕES:
 
 🌐 VERSÃO WEB (esta página):
-   • Informações e demonstração
-   • Portal de download
+   • Portal informativo
+   • Download da versão local
    • Guias e instruções
 
 💻 VERSÃO LOCAL (download):
-   • 36 funcionalidades completas
-   • Comandos reais do Windows
+   • 36+ funcionalidades reais
+   • Comandos Windows completos
    • Interface gráfica profissional
    • Acesso total ao sistema
+   • Logs detalhados
 
-📥 CLIQUE EM "BAIXE AGORA" PARA EXPERIÊNCIA COMPLETA!`);
+📞 SUPORTE:
+By Gean - Disponível para dúvidas
+
+🚀 CLIQUE EM "BAIXE AGORA" E EXPERIMENTE
+A VERSÃO COMPLETA DO SUPERTI!`);
   };
 
   return (
@@ -244,7 +260,7 @@ By Gean - Disponível para dúvidas e suporte
               🛠️ SuperTI Web
             </h1>
             <p style={{ fontSize: '1.25rem', opacity: 0.9 }}>
-              Portal Oficial - Download da Versão Local
+              Download Direto - Versão v1.0 Completa
             </p>
             <div style={{ marginTop: '1rem' }}>
               <span style={{ 
@@ -263,7 +279,16 @@ By Gean - Disponível para dúvidas e suporte
                 fontSize: '0.875rem',
                 margin: '0 0.5rem'
               }}>
-                🚀 Download Direto
+                🚀 MediaFire
+              </span>
+              <span style={{ 
+                background: 'rgba(255,255,255,0.2)',
+                padding: '0.25rem 0.75rem',
+                borderRadius: '9999px',
+                fontSize: '0.875rem',
+                margin: '0 0.5rem'
+              }}>
+                v1.0
               </span>
             </div>
           </div>
@@ -271,29 +296,29 @@ By Gean - Disponível para dúvidas e suporte
 
         {/* Aviso Importante */}
         <div style={{
-          backgroundColor: '#fef3c7',
-          border: '2px solid #f59e0b',
+          backgroundColor: '#d1fae5',
+          border: '2px solid #10b981',
           borderRadius: '1rem',
           padding: '1.5rem',
           marginBottom: '2rem',
           textAlign: 'center'
         }}>
           <h3 style={{ 
-            color: '#92400e',
+            color: '#065f46',
             fontSize: '1.5rem',
             fontWeight: 'bold',
             marginBottom: '1rem'
           }}>
-            ⚡ Download Direto Disponível!
+            ⚡ Download Direto via MediaFire!
           </h3>
-          <p style={{ color: '#92400e', marginBottom: '1rem' }}>
-            A versão completa do SuperTI está disponível para download imediato.
-            <strong> Todas as 36 funcionalidades na versão local.</strong>
+          <p style={{ color: '#065f46', marginBottom: '1rem' }}>
+            <strong>SuperTI v1.0</strong> - Versão completa com 36 funcionalidades.
+            Download rápido e direto.
           </p>
           <button 
             onClick={handleDownload}
             style={{
-              backgroundColor: '#dc2626',
+              backgroundColor: '#10b981',
               color: 'white',
               padding: '1rem 2rem',
               borderRadius: '0.75rem',
@@ -301,11 +326,17 @@ By Gean - Disponível para dúvidas e suporte
               fontWeight: 'bold',
               fontSize: '1.1rem',
               cursor: 'pointer',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              transition: 'all 0.2s'
             }}
+            onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+            onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
           >
-            🚀 BAIXE AGORA - SUPERTI COMPLETO
+            🚀 BAIXAR AGORA - SUPERTI v1.0
           </button>
+          <p style={{ color: '#065f46', fontSize: '0.9rem', marginTop: '1rem' }}>
+            📦 Arquivo: ti_guiv1.rar | 💾 ~15 MB | ⏱️ Download Rápido
+          </p>
         </div>
 
         {/* Grid de Ações */}
@@ -327,7 +358,7 @@ By Gean - Disponível para dúvidas e suporte
             <h3 style={{ 
               fontSize: '1.5rem',
               fontWeight: 'bold',
-              color: '#dc2626',
+              color: '#10b981',
               marginBottom: '1rem'
             }}>
               📥 Download
@@ -336,7 +367,7 @@ By Gean - Disponível para dúvidas e suporte
               onClick={handleDownload}
               style={{
                 width: '100%',
-                backgroundColor: '#dc2626',
+                backgroundColor: '#10b981',
                 color: 'white',
                 padding: '1.5rem',
                 borderRadius: '0.75rem',
@@ -347,10 +378,10 @@ By Gean - Disponível para dúvidas e suporte
                 cursor: 'pointer'
               }}
             >
-              🚀 BAIXAR AGORA
+              🚀 BAIXAR v1.0
             </button>
             <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
-              Versão local com 36 funcionalidades
+              MediaFire | RAR | 36 funções
             </p>
           </div>
 
@@ -385,10 +416,10 @@ By Gean - Disponível para dúvidas e suporte
                 cursor: 'pointer'
               }}
             >
-              📋 VER TODAS
+              📋 36 FERRAMENTAS
             </button>
             <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
-              36 ferramentas profissionais
+              Versão completa v1.0
             </p>
           </div>
 
@@ -403,7 +434,7 @@ By Gean - Disponível para dúvidas e suporte
             <h3 style={{ 
               fontSize: '1.5rem',
               fontWeight: 'bold',
-              color: '#059669',
+              color: '#7c3aed',
               marginBottom: '1rem'
             }}>
               💡 Instruções
@@ -412,7 +443,7 @@ By Gean - Disponível para dúvidas e suporte
               onClick={showInstructions}
               style={{
                 width: '100%',
-                backgroundColor: '#10b981',
+                backgroundColor: '#8b5cf6',
                 color: 'white',
                 padding: '1.5rem',
                 borderRadius: '0.75rem',
@@ -426,7 +457,7 @@ By Gean - Disponível para dúvidas e suporte
               🛠️ COMO USAR
             </button>
             <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
-              Guia completo de utilização
+              Guia completo de extração
             </p>
           </div>
         </div>
@@ -444,7 +475,7 @@ By Gean - Disponível para dúvidas e suporte
             color: '#374151',
             marginBottom: '1rem'
           }}>
-            📊 Informações
+            📊 Informações do SuperTI v1.0
           </h3>
           <div style={{
             backgroundColor: '#1f2937',
@@ -472,10 +503,10 @@ By Gean - Disponível para dúvidas e suporte
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
           }}>
             <p style={{ color: '#6b7280', marginBottom: '0.5rem' }}>
-              🚀 SuperTI - Ferramenta Completa de Suporte de TI
+              🚀 SuperTI v1.0 - Ferramenta Completa de Suporte de TI
             </p>
             <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
-              By Gean • 📥 Download Direto • 🪟 Ativação Windows Disponível
+              By Gean • 📥 Download via MediaFire • 🪟 Ativação Windows • 🔧 36 Funcionalidades
             </p>
           </div>
         </footer>
