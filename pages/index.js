@@ -3,54 +3,70 @@ import { useState } from 'react';
 export default function SuperTI() {
   const [results, setResults] = useState('');
 
+  // DOWNLOAD DIRETO - Link do OneDrive
   const handleDownload = () => {
-    setResults(`📥 DOWNLOAD DA VERSÃO LOCAL - SUPERTI COMPLETO
+    // Seu link do OneDrive (convertido para link direto de download)
+    const downloadUrl = 'https://1drv.ms/u/s!ETW_sjWqKf9CmCoiv3eFbPIBOWGEQIK8reGGN-41avDUEA?e=8mYRDr';
+    
+    // Converter link do OneDrive para link direto (se necessário)
+    const directDownloadUrl = downloadUrl.replace('https://1drv.ms/u/', 'https://onedrive.live.com/download?resid=');
+    
+    // Abrir download em nova aba
+    window.open(directDownloadUrl, '_blank');
+    
+    setResults(`📥 DOWNLOAD INICIADO - SUPERTI COMPLETO
 
-🚀 PARA BAIXAR A VERSÃO COMPLETA:
+✅ Download iniciado em nova aba!
 
-1. 📧 Entre em contato com: gean@email.com
-2. 💬 Solicite o arquivo: SuperTI_Completo.zip
-3. 🛠️ Receba o download direto
+🔗 LINK DO ARQUIVO: 
+${downloadUrl}
 
-🔧 FUNCIONALIDADES DA VERSÃO LOCAL:
+📦 DETALHES DO DOWNLOAD:
 
-✅ ATIVAÇÃO WINDOWS - Completa e funcional
-✅ COMANDOS SISTEMA - systeminfo, ipconfig, etc.
-✅ FERRAMENTAS TI - 20+ opções profissionais
-✅ SEGURANÇA - Execução como administrador
+• 🛠️ SuperTI Completo - Versão Local
+• 📁 Arquivo executável pronto para usar
+• 🪟 Ativador do Windows incluído
+• 🔧 36 ferramentas de suporte TI
+• 💻 Interface gráfica profissional
 
-📋 O QUE INCLUI:
+🚀 COMO USAR APÓS BAIXAR:
 
-💻 Sistema Completo:
+1. 📁 Baixe o arquivo do link acima
+2. 🛡️ Clique direito no executável
+3. ⚡ Selecione "Executar como administrador"
+4. 🎯 Use todas as 36 funcionalidades
+
+✨ FUNCIONALIDADES INCLUÍDAS:
+
+💻 SISTEMA COMPLETO:
    • Informações detalhadas do sistema
    • Processos e serviços em tempo real
    • Gerenciamento de drivers
    • Monitoramento de desempenho
 
-🌐 Rede Avançada:
+🌐 REDE AVANÇADA:
    • Diagnóstico completo de rede
    • Reset de TCP/IP e Winsock
    • Testes de conectividade
    • Configurações avançadas
 
-🛠️ Ferramentas:
+🛠️ FERRAMENTAS:
+   • Ativação do Windows ★
    • Limpeza automática de temporários
    • Reparo do sistema Windows
    • Gerenciamento de usuários
-   • Backup e restore
+   • Downloads de programas (Zabbix, GLPI)
 
-🪟 Ativação Windows:
-   • Métodos seguros e confiáveis
-   • Ativação digital
-   • KMS para empresas
-   • Verificação de status
+📊 LOGS DETALHADOS:
+   • Todas as ações registradas
+   • Timestamp em todas as operações
+   • Arquivo: C:\\SuporteTI\\super_ti_gui.log
 
-📞 CONTATO PARA DOWNLOAD:
-Email: gean@email.com
-WhatsApp: (11) 99999-9999
+🔒 SEGURO E CONFIÁVEL!
+By Gean - Ferramenta profissional de TI
 
-💡 Versão web serve como demonstração.
-A versão local tem TODAS as funcionalidades!`);
+💡 DICA: Sempre execute como Administrador
+para acesso total às funcionalidades!`);
   };
 
   const showFeatures = () => {
@@ -58,112 +74,144 @@ A versão local tem TODAS as funcionalidades!`);
 
 🎯 VERSÃO LOCAL COMPLETA - BY GEAN
 
-💻 MÓDULO SISTEMA:
+💻 MÓDULO SISTEMA (6 funções):
 1. Informações completas do sistema
 2. Modelo e serial do computador
 3. Detalhes da placa-mãe e BIOS
 4. Memória RAM e processador
 5. Drivers instalados
 6. Variáveis de ambiente
-7. Verificação de integridade (sfc /scannow)
-8. Reparo da imagem Windows (DISM)
 
-🌐 MÓDULO REDE:
-9. Configuração completa de rede
-10. Teste de ping e conectividade
-11. Rastreamento de rota
-12. Resolução DNS
-13. Conexões de rede ativas
-14. Endereço MAC e tabela ARP
-15. Reset TCP/IP e Winsock
-16. Tabela de rotas
+🌐 MÓDULO REDE (6 funções):
+7. Configuração completa de rede
+8. Teste de ping e conectividade
+9. Rastreamento de rota
+10. Resolução DNS
+11. Conexões de rede ativas
+12. Endereço MAC e tabela ARP
 
-💾 MÓDULO DISCOS:
-17. Espaço em disco e partições
-18. Verificação de discos (chkdsk)
-19. Gerenciamento de discos
-20. Estrutura de pastas
-21. Limpeza segura de espaço
+💾 MÓDULO DISCOS (6 funções):
+13. Espaço em disco e partições
+14. Verificação de discos (chkdsk)
+15. Gerenciamento de discos
+16. Estrutura de pastas
+17. Limpeza segura de espaço
+18. Listagem de unidades
 
-👥 MÓDULO USUÁRIOS:
-22. Usuários logados e locais
-23. Detalhes de usuários específicos
-24. Sessões ativas (RDP/console)
-25. Administradores locais
-26. Políticas de senha
+👥 MÓDULO USUÁRIOS (6 funções):
+19. Usuários logados e locais
+20. Detalhes de usuários específicos
+21. Sessões ativas (RDP/console)
+22. Administradores locais
+23. Políticas de senha
+24. Informações de usuário
 
-⚙️ MÓDULO PROCESSOS:
-27. Lista completa de processos
-28. Finalização de processos
-29. Serviços ativos
-30. Lista resumida de processos
+⚙️ MÓDULO PROCESSOS (6 funções):
+25. Lista completa de processos
+26. Finalização de processos
+27. Serviços ativos
+28. Lista resumida de processos
+29. Uso da CPU
+30. Memória livre
 
-🔧 MÓDULO FERRAMENTAS:
+🔧 MÓDULO ADMINISTRATIVO (6 funções):
 31. Ativação do Windows ★
 32. Reinício do spooler de impressão
 33. Limpeza de arquivos temporários
-34. Download de programas (Zabbix, GLPI)
+34. Reparo do sistema (sfc /scannow)
+35. Reset de configurações de rede
+36. Downloads de programas
 
-🛡️ SEGURANÇA:
+📦 MÓDULO DOWNLOADS (5 funções):
+37. Zabbix Agent - Monitoramento
+38. GLPI Agent - Gerenciamento TI
+39. Google Chrome
+40. Mozilla Firefox
+41. VLC Media Player
+
+🛡️ RECURSOS AVANÇADOS:
+• Interface gráfica moderna
+• Logs automáticos detalhados
 • Execução como administrador
-• Logs detalhados de todas as ações
-• Verificação de segurança
-• Backup automático de configurações
+• Threading para não travar
+• Timeout inteligente
 
-📥 CONTATE PARA RECEBER O DOWNLOAD!`);
+📥 BAIXE AGORA PARA ACESSO COMPLETO!`);
   };
 
   const showInstructions = () => {
     setResults(`📋 COMO USAR O SUPERTI - GUIA COMPLETO
 
-🎯 APÓS RECEBER O DOWNLOAD:
+🎯 APÓS BAIXAR O ARQUIVO:
 
-1. 📁 EXTRAIR ARQUIVO
-   • Baixe o arquivo SuperTI_Completo.zip
-   • Extraia em uma pasta de sua preferência
-   • Exemplo: C:\\SuperTI\\
+1. 📥 BAIXAR ARQUIVO
+   • Clique em "BAIXE AGORA" acima
+   • Salve o arquivo em sua pasta preferida
+   • Exemplo: Área de Trabalho ou Downloads
 
 2. 🛡️ EXECUTAR COMO ADMINISTRADOR
-   • Clique com botão direito em "SuperTI.bat"
+   • Clique com botão direito no executável
    • Selecione "Executar como administrador"
-   • Confirme a solicitação de UAC
+   • Confirme a solicitação de UAC (Controle de Conta de Usuário)
 
-3. 🎮 USAR O MENU PRINCIPAL
-   • Interface colorida e organizada
-   • 34 opções numeradas
-   • Logs automáticos em C:\\SuporteTI\\
+3. 🎮 USAR A INTERFACE
+   • 6 seções organizadas por categoria
+   • 36 botões com funcionalidades específicas
+   • Área de saída em tempo real
+   • Logs automáticos
 
 4. 🪟 ATIVAR WINDOWS
-   • Selecione opção "8" no menu
+   • Selecione "🪟 Ativar Windows" no módulo Administrativo
    • Siga as instruções na tela
    • Ativação automática e segura
 
 🔧 FUNCIONALIDADES ESPECIAIS:
 
+✅ INTERFACE MODERNA
+   • Design profissional e intuitivo
+   • Cores organizadas por categoria
+   • Navegação fácil e rápida
+
 ✅ LOGS AUTOMÁTICOS
    • Todas as ações são registradas
-   • Arquivo: C:\\SuporteTI\\logs.txt
+   • Arquivo: C:\\SuporteTI\\super_ti_gui.log
    • Timestamp e detalhes completos
 
-✅ INTERFACE PROFISSIONAL
-   • Cores organizadas por categoria
-   • Menu intuitivo e fácil navegação
-   • Feedback visual de todas as ações
+✅ DOWNLOADS INTEGRADOS
+   • Zabbix Agent - Monitoramento
+   • GLPI Agent - Gerenciamento TI
+   • Programas úteis diretamente
 
-✅ SEM INSTALAÇÃO
-   • Apenas extrair e executar
-   • Não modifica registro
-   • Não deixa resíduos
+✅ SEGURANÇA
+   • Execução como administrador
+   • Comandos verificados
+   • Sem modificações perigosas
 
-⚠️  RECOMENDAÇÕES:
+⚠️  RECOMENDAÇÕES IMPORTANTES:
 
-• Sempre execute como administrador
-• Mantenha antivírus atualizado
-• Faça backup regularmente
-• Use em ambiente autorizado
+• 🔒 Sempre execute como administrador
+• 🔄 Mantenha Windows Update ativo
+• 🛡️ Use antivírus atualizado
+• 💾 Faça backup regularmente
+• ⚠️ Use em ambiente autorizado
 
-📞 SUPORTE:
-gean@email.com - Para dúvidas e download`);
+📞 SUPORTE E CONTATO:
+By Gean - Disponível para dúvidas e suporte
+
+🎯 VERSÃO WEB vs VERSÃO LOCAL:
+
+🌐 VERSÃO WEB (esta página):
+   • Informações e demonstração
+   • Portal de download
+   • Guias e instruções
+
+💻 VERSÃO LOCAL (download):
+   • 36 funcionalidades completas
+   • Comandos reais do Windows
+   • Interface gráfica profissional
+   • Acesso total ao sistema
+
+📥 CLIQUE EM "BAIXE AGORA" PARA EXPERIÊNCIA COMPLETA!`);
   };
 
   return (
@@ -215,7 +263,7 @@ gean@email.com - Para dúvidas e download`);
                 fontSize: '0.875rem',
                 margin: '0 0.5rem'
               }}>
-                🚀 Vercel
+                🚀 Download Direto
               </span>
             </div>
           </div>
@@ -236,12 +284,28 @@ gean@email.com - Para dúvidas e download`);
             fontWeight: 'bold',
             marginBottom: '1rem'
           }}>
-            ⚠️ Site Informativo - Download Sob Demanda
+            ⚡ Download Direto Disponível!
           </h3>
           <p style={{ color: '#92400e', marginBottom: '1rem' }}>
-            Esta versão web mostra todas as funcionalidades disponíveis.
-            <strong> Entre em contato para receber o download da versão local completa.</strong>
+            A versão completa do SuperTI está disponível para download imediato.
+            <strong> Todas as 36 funcionalidades na versão local.</strong>
           </p>
+          <button 
+            onClick={handleDownload}
+            style={{
+              backgroundColor: '#dc2626',
+              color: 'white',
+              padding: '1rem 2rem',
+              borderRadius: '0.75rem',
+              border: 'none',
+              fontWeight: 'bold',
+              fontSize: '1.1rem',
+              cursor: 'pointer',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+            }}
+          >
+            🚀 BAIXE AGORA - SUPERTI COMPLETO
+          </button>
         </div>
 
         {/* Grid de Ações */}
@@ -283,10 +347,10 @@ gean@email.com - Para dúvidas e download`);
                 cursor: 'pointer'
               }}
             >
-              📧 SOLICITAR DOWNLOAD
+              🚀 BAIXAR AGORA
             </button>
             <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
-              Entre em contato para receber o arquivo
+              Versão local com 36 funcionalidades
             </p>
           </div>
 
@@ -324,7 +388,7 @@ gean@email.com - Para dúvidas e download`);
               📋 VER TODAS
             </button>
             <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
-              34 ferramentas profissionais
+              36 ferramentas profissionais
             </p>
           </div>
 
@@ -411,7 +475,7 @@ gean@email.com - Para dúvidas e download`);
               🚀 SuperTI - Ferramenta Completa de Suporte de TI
             </p>
             <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
-              By Gean • 📧 Contato para download • 🪟 Ativação Windows Disponível
+              By Gean • 📥 Download Direto • 🪟 Ativação Windows Disponível
             </p>
           </div>
         </footer>
