@@ -1,13 +1,16 @@
 {
-    "version": "1.2",
-    "description": "SuperTI - Ferramenta Completa de Suporte",
-    "release_date": "04/10/2025",
-    "download_url": "https://github.com/geanyuki10/tiv2/releases/download/v1.2/Super_TI_By_Gean.exe",
+    "version": "1.3.0",
+    "description": "SuperTI v1.3.0 - Novas ferramentas e melhorias",
+    "release_date": "2025-10-04",
+    "download_url": "https://github.com/geanyuki10/tiv2/releases/download/v1.3.0/Super_TI_By_Gean.exe",
     "changelog": [
-        "🎊 NOVA VERSÃO 2025 - Totalmente atualizada",
-        "🔧 Sistema de atualização integrado",
-        "🎨 Interface moderna e responsiva",
-        "⚡ Performance otimizada",
-        "🐛 Correções de estabilidade"
+        "🎉 VERSÃO 1.3.0 LANÇADA!",
+        "🔧 NOVO: Sistema de backup automático",
+        "🌐 MELHORIA: Scanner de rede avançado",
+        "⚡ PERFORMANCE: 40% mais rápido na inicialização",
+        "🎨 INTERFACE: Novo tema escuro opcional",
+        "📊 RELATÓRIOS: Geração de relatórios em PDF",
+        "🐛 CORREÇÃO: Problemas de estabilidade resolvidos",
+        "🔒 SEGURANÇA: Verificação de integridade de arquivos"
     ]
 }
