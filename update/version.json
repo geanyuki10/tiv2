@@ -1,16 +1,15 @@
 {
     "version": "1.3.0",
-    "description": "SuperTI v1.3.0 - Novas ferramentas e melhorias",
     "release_date": "04/10/2025",
+    "description": "SuperTI - Versão 1.3.0 com novas funcionalidades",
     "download_url": "https://github.com/geanyuki10/tiv2/releases/download/v1.3.0/Super_TI_By_Gean.exe",
     "changelog": [
-        "🎉 VERSÃO 1.3.0 LANÇADA!",
-        "🔧 NOVO: Sistema de backup automático",
-        "🌐 MELHORIA: Scanner de rede avançado",
-        "⚡ PERFORMANCE: 40% mais rápido na inicialização",
-        "🎨 INTERFACE: Novo tema escuro opcional",
-        "📊 RELATÓRIOS: Geração de relatórios em PDF",
-        "🐛 CORREÇÃO: Problemas de estabilidade resolvidos",
-        "🔒 SEGURANÇA: Verificação de integridade de arquivos"
+        "NOVO: Sistema de backup automático",
+        "MELHORIA: Scanner de rede avançado", 
+        "PERFORMANCE: 40% mais rápido na inicialização",
+        "INTERFACE: Novo tema escuro opcional",
+        "RELATÓRIOS: Geração de relatórios em PDF",
+        "CORREÇÃO: Problemas de estabilidade resolvidos",
+        "SEGURANÇA: Verificação de integridade de arquivos"
     ]
 }
